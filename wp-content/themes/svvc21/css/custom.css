@@ -1,0 +1,37 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+.tm-headerbar, .tm-navbar, .tm-footer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tm-headerbar .uk-panel {
+  max-width: 100%;
+  margin: 0;
+  float: none;
+}
+.hero#home-hero {
+  background: url(../images/home_hero_pool.png) no-repeat;
+  height: 80vh;
+  display: grid;
+  grid-template-areas: ". . ."
+  						". main ."
+                    	". action-links .";
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-rows: auto auto 100px; 
+}
+.hero-container {
+  grid-area: main;
+}
+.hero-action-links {
+	grid-area: action-links;
+}
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+}
+a.btn.alt {
+    background: transparent;
+    border: solid 1px white;
+}
+a.btn.alt:hover {
+    background: rgba(255,255,255,0.7);
+}
